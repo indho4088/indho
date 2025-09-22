@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mohamed Portfolio 2025</title>
+  <style>
+    * {margin:0; padding:0; box-sizing:border-box;}
+    body {
+      font-family: 'Poppins', sans-serif;
+      background:#0f172a;
+      color:#e2e8f0;
+      line-height:1.6;
+      overflow-x:hidden;
+    }
+    header {
+      text-align:center;
+      padding:3rem 1rem;
+      background:linear-gradient(135deg,#1e293b,#0f172a);
+      animation: fadeIn 2s ease-in-out;
+    }
+    header img {
+      width:150px; height:150px;
+      border-radius:50%;
+      border:4px solid #38bdf8;
+      object-fit:cover;
+      animation: bounce 3s infinite;
+    }
+    header h1 {
+      margin-top:1rem;
+      font-size:2.5rem;
+      color:#38bdf8;
+      animation: slideIn 2s ease-out;
+    }
+    header p {
+      font-size:1.2rem;
+      color:#94a3b8;
+      animation: fadeIn 3s ease-in-out;
+    }
+    section {
+      max-width:1000px;
+      margin:2rem auto;
+      padding:1rem;
+      animation: fadeUp 2s ease-in-out;
+    }
+    h2 {
+      color:#38bdf8;
+      margin-bottom:1rem;
+      border-bottom:2px solid #38bdf8;
+      display:inline-block;
+    }
+    .skills, .projects, .gallery {
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:1rem;
+    }
+    .card {
+      background:#1e293b;
+      padding:1rem;
+      border-radius:12px;
+      transition:transform 0.4s, box-shadow 0.4s;
+    }
+    .card:hover {
+      transform:translateY(-8px) scale(1.05);
+      box-shadow:0 8px 25px rgba(56,189,248,0.3);
+    }
+    .gallery img {
+      width:100%;
+      border-radius:12px;
+      transition:transform 0.4s, box-shadow 0.4s;
+    }
+    .gallery img:hover {
+      transform:scale(1.08);
+      box-shadow:0 8px 25px rgba(56,189,248,0.4);
+    }
+    footer {
+      text-align:center;
+      padding:2rem 1rem;
+      background:#1e293b;
+      margin-top:2rem;
+      color:#94a3b8;
+      animation: fadeIn 3s ease-in-out;
+    }
+    a {color:#38bdf8; text-decoration:none;}
+    a:hover {text-decoration:underline;}
+    /* Animations */
+    @keyframes fadeIn {
+      from{opacity:0;} to{opacity:1;}
+    }
+    @keyframes fadeUp {
+      from{opacity:0; transform:translateY(30px);}
+      to{opacity:1; transform:translateY(0);}
+    }
+    @keyframes slideIn {
+      from{opacity:0; transform:translateX(-50px);}
+      to{opacity:1; transform:translateX(0);}
+    }
+    @keyframes bounce {
+      0%,100%{transform:translateY(0);}
+      50%{transform:translateY(-10px);}
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <img src="2.jpg" alt="Your Photo">
+    <h1>Mohamed Abdullahi Ibrahim</h1>
+    <p>Software Engineer | Full-Stack Developer | Innovator</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I am a passionate Software Engineer specialized in Python, JavaScript, and modern frameworks. 
+      My mission is to build efficient, secure, and scalable applications that empower people and businesses in 2025 and beyond.
+    </p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <div class="skills">
+      <div class="card">Python / Django</div>
+      <div class="card">JavaScript / React</div>
+      <div class="card">HTML / CSS</div>
+      <div class="card">Database (MySQL, MongoDB)</div>
+      <div class="card">Git & GitHub</div>
+      <div class="card">Problem Solving</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="card">
+        <h3>Portfolio Website</h3>
+        <p>A modern responsive portfolio to showcase my skills and work.</p>
+      </div>
+      <div class="card">
+        <h3>Task Manager App</h3>
+        <p>Full-stack app built with Django and React for productivity.</p>
+      </div>
+      <div class="card">
+        <h3>E-commerce Website</h3>
+        <p>Scalable online store with secure payment integration.</p>
+      </div>
+    </div>
+  </section>
+  
+  <footer>
+    <p>📧 Email: <a href="mailto:youremail@gmail.com">youremail@gmail.com</a> | 🌐 GitHub: <a href="#">github.com/yourusername</a></p>
+    <p>© 2025 Mohamed Abdullahi Ibrahim</p>
+  </footer>
+
+</body>
+</html>
